@@ -1,38 +1,72 @@
-.App {
+.habit-tracker-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.current-habit {
+  margin-bottom: 20px;
+}
+
+.habit-status {
+  margin-top: 10px;
+}
+
+.previous-habits {
+  margin-bottom: 20px;
+}
+
+.habit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.habit-table th,
+.habit-table td {
+  padding: 10px;
   text-align: center;
+  border: 1px solid #ccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.habit-table th {
+  background-color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.habit-table td {
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.habit-table button {
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Status colors */
+.done {
+  background-color: #82ca9d;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.not-done {
+  background-color: #f36e6c;
+  color: #fff;
 }
+
+.none {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.habit-table td.tasks {
+  white-space: pre-wrap;
+  width: auto;
+  padding: 10px;
+  font-size: 12px;
+}
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
